@@ -8,6 +8,7 @@ import {
   UserButton
 } from '@clerk/nextjs'
 import "./globals.css";
+import { QueryProvider } from "@/providers/query-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,8 +34,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body>
-          {children}
+        <body className={geistSans.className}>
+          <QueryProvider>
+            {children}
+          </QueryProvider>
         </body>
       </html>
     </ClerkProvider>
