@@ -15,6 +15,13 @@
       "when": 1727853242733,
       "tag": "0001_dazzling_silver_fox",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1728030674739,
+      "tag": "0002_lowly_salo",
+      "breakpoints": true
     }
   ]
 }
